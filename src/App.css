@@ -14,7 +14,7 @@ body{
   margin-bottom: 30px;
   margin-right: 0;
 }
-image 
+img 
 {
   width: 100%; 
 
@@ -26,6 +26,8 @@ image
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
  position: relative;
+ background-size: cover;
+ background-position: center;
 }
 .image-btn{
   width: 100px;

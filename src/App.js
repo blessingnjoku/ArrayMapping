@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import kidsgame from '../src/assets/images/kidsgame.png'
+import secondimg from '../src/assets/images/secondimg.png'
+
 
 const ArrayData=[
   {
     id:1,
-    // Image:require(../),
+    displayImage:secondimg,
     category:"category",
     imageTag:"Open Group",
     title:"Sample Support Group Name Comes In Here ",
@@ -16,7 +19,7 @@ const ArrayData=[
   },
   {
     id:2,
-    // Image:require(../),
+    displayImage:kidsgame,
     category:"category",
     imageTag:"Open Group",
     title:"Sample Support Group Name Comes In Here ",
@@ -27,7 +30,7 @@ const ArrayData=[
   },
   {
     id:3,
-    // Image:require(../),
+    displayImage:kidsgame,
     category:"category",
     imageTag:"Open Group",
     title:"Sample Support Group Name Comes In Here ",
@@ -38,7 +41,7 @@ const ArrayData=[
   },
   {
     id:4,
-    // Image:require(../),
+    displayImage:secondimg,
     category:"category",
     imageTag:"Open Group",
     title:"Sample Support Group Name Comes In Here ",
@@ -50,7 +53,7 @@ const ArrayData=[
 
   {
     id:5,
-    // Image:require(../),
+    displayImage:secondimg,
     category:"category",
     imageTag:"Open Group",
     title:"Sample Support Group Name Comes In Here ",
@@ -61,7 +64,7 @@ const ArrayData=[
   },
   {
     id:5,
-    // Image:require(../),
+    displayImage:kidsgame,
     category:"category",
     imageTag:"Open Group",
     title:"Sample Support Group Name Comes In Here ",
@@ -83,8 +86,8 @@ const App= ()=> {
 return(
   <div className='col-md-4' key={key}>
     <div className='Box'>
-      <div className='image-box'>
-        <image src="" />
+      <div className='image-box' style={{backgroundImage:`url(${val.displayImage})`}}>
+        
       <button className='image-btn '>{val.imageTag}</button>
       </div>
       <div className='Content-box'>
